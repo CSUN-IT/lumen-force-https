@@ -74,11 +74,11 @@ return [
 
 ### Middleware Installation
 
-Finally, add a call to `$app->middleware()` in `bootstrap/app.php` to apply it to all requests the application receives:
+Finally, add a call to `$app->middleware()` in `bootstrap/app.php` or modify an existing one to apply it to all requests the application receives:
 
 ```
 $app->middleware([
-   CSUNMetaLab\LumenForceHttps\Http\Middleware\ForceHttps::class
+   CSUNMetaLab\LumenForceHttps\Http\Middleware\ForceHttps::class,
 ]);
 ```
 
