@@ -77,7 +77,9 @@ return [
 Finally, add a call to `$app->middleware()` in `bootstrap/app.php` to apply it to all requests the application receives:
 
 ```
-$app->middleware(CSUNMetaLab\LumenForceHttps\Http\Middleware\ForceHttps::class);
+$app->middleware([
+   CSUNMetaLab\LumenForceHttps\Http\Middleware\ForceHttps::class
+]);
 ```
 
 ## Required Environment Variables
